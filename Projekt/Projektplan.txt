@@ -1,0 +1,44 @@
+Global flagga:
+	Vi kommer ha en global variabel som hanterar vilket läge 	programmet är i. Alltså om det är fuktigt så är den 1, är 	den inte fuktig är den 0.
+	(Kanske bool istället?)
+
+getHumidity:
+	Gör det som analoginput.c gör, alltså hämta de analoga 		värdena från chipkit.
+
+displayMessage:
+	Skriver ut meddelande på skärmen beroende på vad vår 			Globala flagga säger (if-satser)
+	Kommer anropa funktionen checkTime.
+
+checkHumidity:
+	Kontrollerar värdet från getHumidity och ändrar den globala 	flaggan beroende på värdet hos fuktsensorn
+
+displayLights:
+	Ändra värdet på lamporna beroende på vad den globala 			flaggan säger.
+
+checkTime:
+	Kontrollerar tiden sen blomman vattnades (kommer anropas av displayMessage) och returnerar tiden sen dess.
+
+displayWelcome:
+	Välkomstmeddelande. Härifrån skall användaren trycka igång programmet med en knapptryckning (eller något annat? se det som en startmeny)
+
+- PROGRAMMET STARTAR - 
+
+<saker händer, tänker typ att lampor initieras som outputs, pins initieras som inputs>
+displayWelcome anropas.
+
+En oändlig loop startas när en knapp trycks in (eller vad vi väljer). Följande funktioner anropas i denna ordning då programmet körs.
+- LOOP STARTAR -
+getHumidity 		Hämta fuktigheten
+checkHumidity		Kontrollera fuktigheten och ändra global variabel
+checkTime		Kontrollera tiden sen det vattnades
+displayLights		Ändra lampor beroende på global variabel
+displayMessage		Skriv ut det som behövs, typ 
+			"JAG ÄR FUKTIG, JAG VATTNADES FÖR <tid> SEN"
+- REPETERA -
+
+
+Vad vi kan lägga till:
+Kontrollera för interrupts
+	- Knappar
+	- Timer2
+	- Switchar

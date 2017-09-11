@@ -1,0 +1,6 @@
+Hej!
+Detta är samtliga labbar plus mitt projekt från IS1500 2016.
+Som Projekt gjorde jag och min labbkamrat ett påminnelseprogram för när man bör vattna sina blommor.
+
+Vi köpte en fuktsensor på Clas Ohlsson (Eller Kjell, minns inte) och kopplade samman med vår Pic32.
+Den viktiga koden för den finns i main.c-filen. Titta på den.
