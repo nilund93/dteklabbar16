@@ -1,0 +1,32 @@
+För att lägga till filer i commiten:
+git add .
+punkten gör att du LÄGGER TILL ALLA filer.
+
+För att commita med ett meddelande:
+git commit -a -m "meddelandet"
+-a gör att du signerar med din signatur
+-m gör att du skriver ett meddelande
+
+För att pusha
+git push
+fyll i ditt lösenord
+done
+
+För att kontrollera att du är "up-to-date" med gitten i mappen du står i, skriv:
+git status
+
+För att hämta från Gitten, ställ dig i mappen och skriv:
+git pull
+
+För att kompliera c-filerna:
+Starta msys.
+Gå till mappen med koden(msys startar "utanför datorn")
+cd C:/Users/SofieEllerNiclas/blablabla
+
+För att kompilera, skriv: mcc <filnamn> -o <det-du-vill-kalla-den>
+
+För att köra filen du kompilerat, skriv:
+./<det-du-vill-kalla-den> <eventuellt-input>
+
+SKRIV INTE <>
+
